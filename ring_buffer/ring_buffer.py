@@ -27,25 +27,7 @@ class RingBuffer:
         if self.next:
             self.next.prev = self.prev
                
-        #if not at capacity:
-        # add to the most recent
-        # update current
-        # if len(self.storage) < self.capacity:
-        #     self.storage.add_to_tail(item)
-        #     self.current = self.storage.tail
-        
-        # # if at capacity
-        # # discard stale value
-        # # checking index of other values
-        # # moving through each of them
-        # # if the current value is the most recent, start at the beginning
-        # if len(self.storage) == self.capacity:
-        #     self.current.value = item
-        #     if self.current is self.storage.tail:
-        #         self.current = self.storage.head
-        #     else:    
-        #          self.current = self.current.next
-
+  
 
     def get(self):
         # Note:  This is the only [] allowed
